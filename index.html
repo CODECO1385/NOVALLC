@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova LLC | Texas Meets Innovation</title>
+<meta name="description" content="Nova LLC — modern digital solutions in photography, web design, app development, and interactive dining tech for Texas businesses.">
+
+<!-- Fonts: Space Grotesk for display headings, Inter for body/UI text -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =========================================================
+     NAVIGATION BAR
+========================================================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__brand">
+      <span class="nav__brand-mark"></span>
+      NOVA <span class="nav__brand-thin">LLC</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link">Home</a>
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#packages" class="nav__link">Packages</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="#contact" class="btn btn--sm btn--primary nav__cta">Get a Quote</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- =========================================================
+     HERO SECTION — full-screen background video (./Bg.mp4)
+     A dark gradient overlay sits between the video and the
+     text so the headline stays legible over any footage.
+========================================================= -->
+<section class="hero" id="home">
+  <div class="hero__media">
+    <video class="hero__video" autoplay muted loop playsinline poster="">
+      <source src="./Bg.mp4" type="video/mp4">
+    </video>
+    <div class="hero__fallback" aria-hidden="true"></div>
+    <div class="hero__overlay"></div>
+  </div>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow">A Texas-based digital studio</p>
+    <h1 class="hero__title">NOVA <span>LLC</span></h1>
+    <p class="hero__tagline">Texas Meets Innovation</p>
+    <p class="hero__desc">Modern digital solutions designed to help businesses grow, stand out, and connect with their customers.</p>
+
+    <div class="hero__actions">
+      <a href="#contact" class="btn btn--lg btn--primary">Get a Quote</a>
+      <a href="#services" class="btn btn--lg btn--ghost">Explore Services</a>
+    </div>
+  </div>
+
+  <a href="#services" class="hero__scroll" aria-label="Scroll to services">
+    <span></span>
+  </a>
+</section>
+
+<!-- =========================================================
+     SERVICES SECTION
+========================================================= -->
+<section class="services" id="services">
+  <div class="section__head">
+    <h2 class="section__title">Our Core Services</h2>
+    <p class="section__subtitle">Modern digital solutions designed to help your business grow.</p>
+  </div>
+
+  <div class="services__grid">
+
+    <!-- Service 1: Photography -->
+    <article class="service-card service-card--blue">
+      <div class="service-card__top">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 8.5C4 7.67 4.67 7 5.5 7H7.8L8.6 5.4C8.87 4.85 9.44 4.5 10.05 4.5H13.95C14.56 4.5 15.13 4.85 15.4 5.4L16.2 7H18.5C19.33 7 20 7.67 20 8.5V17.5C20 18.33 19.33 19 18.5 19H5.5C4.67 19 4 18.33 4 17.5V8.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.25" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <span class="service-card__tag">Visual Content</span>
+      </div>
+      <h3 class="service-card__title">Professional Photography</h3>
+      <p class="service-card__desc">High-quality photography designed to showcase your products, food, business, and brand.</p>
+      <ul class="service-card__list">
+        <li>Food Photography</li>
+        <li>Product Photography</li>
+        <li>Business Photography</li>
+        <li>Brand Photography</li>
+        <li>High-Resolution Editing</li>
+      </ul>
+      <div class="service-card__frame" data-frame="photo"></div>
+    </article>
+
+    <!-- Service 2: Web Design & Development -->
+    <article class="service-card service-card--purple">
+      <div class="service-card__top">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5" width="17" height="12" rx="1.6" stroke="currentColor" stroke-width="1.5"/><path d="M8.5 20.5H15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12 17V20.5" stroke="currentColor" stroke-width="1.5"/><path d="M6.5 8.3H12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M6.5 11H10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <span class="service-card__tag">Web</span>
+      </div>
+      <h3 class="service-card__title">Web Design &amp; Development</h3>
+      <p class="service-card__desc">Modern, responsive websites designed to help businesses create a professional online presence.</p>
+      <ul class="service-card__list">
+        <li>Responsive Website Design</li>
+        <li>Landing Pages</li>
+        <li>Business Websites</li>
+        <li>SEO-Friendly Structure</li>
+        <li>Contact Forms</li>
+        <li>Modern User Experience</li>
+      </ul>
+      <div class="service-card__frame" data-frame="web"></div>
+    </article>
+
+    <!-- Service 3: App Design & Development -->
+    <article class="service-card service-card--orange">
+      <div class="service-card__top">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3.5" width="10" height="17" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 17.3H13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <span class="service-card__tag">Mobile &amp; Web Apps</span>
+      </div>
+      <h3 class="service-card__title">App Design &amp; Development</h3>
+      <p class="service-card__desc">Professional mobile and web applications designed to create better digital experiences.</p>
+      <ul class="service-card__list">
+        <li>Mobile App Design</li>
+        <li>UI/UX Design</li>
+        <li>Web Applications</li>
+        <li>User Flows</li>
+        <li>Interactive Prototypes</li>
+        <li>App Development</li>
+      </ul>
+      <div class="service-card__frame" data-frame="app"></div>
+    </article>
+
+    <!-- Service 4: 3D Menus & Google Reviews -->
+    <article class="service-card service-card--teal">
+      <div class="service-card__top">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5L19.5 7.75V16.25L12 20.5L4.5 16.25V7.75L12 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 12L19.5 7.75" stroke="currentColor" stroke-width="1.5"/><path d="M12 12L4.5 7.75" stroke="currentColor" stroke-width="1.5"/><path d="M12 12V20.5" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <span class="service-card__tag">Interactive &amp; Reviews</span>
+      </div>
+      <h3 class="service-card__title">3D Menus &amp; Google Reviews</h3>
+      <p class="service-card__desc">Interactive digital solutions that help restaurants and businesses create better customer experiences and strengthen their online presence.</p>
+      <ul class="service-card__list">
+        <li>Interactive 3D Menus</li>
+        <li>AR Menu Experiences</li>
+        <li>Product Visualization</li>
+        <li>Google Review Assistance</li>
+        <li>Review QR Codes</li>
+        <li>NFC Review Cards</li>
+      </ul>
+      <div class="service-card__frame" data-frame="menu"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- =========================================================
+     PACKAGES / PRICING SECTION
+========================================================= -->
+<section class="packages" id="packages">
+  <div class="section__head">
+    <h2 class="section__title">Packages</h2>
+    <p class="section__subtitle">Choose the digital solution that fits your business.</p>
+  </div>
+
+  <div class="packages__grid">
+
+    <div class="package-card">
+      <div class="package-card__head">
+        <h3 class="package-card__title">Photography Package</h3>
+        <p class="package-card__price"><span>Starting at</span>$199</p>
+      </div>
+      <ul class="package-card__list">
+        <li>Professional Photography</li>
+        <li>Up to 15 Edited Photos</li>
+        <li>High-Resolution Images</li>
+        <li>Product or Food Photography</li>
+        <li>Professional Editing</li>
+      </ul>
+      <a href="#contact" class="btn btn--outline package-card__btn">Get a Quote</a>
+    </div>
+
+    <div class="package-card package-card--highlight">
+      <span class="package-card__badge">Most Popular</span>
+      <div class="package-card__head">
+        <h3 class="package-card__title">Web Package</h3>
+        <p class="package-card__price"><span>Starting at</span>$500</p>
+      </div>
+      <ul class="package-card__list">
+        <li>Modern Website Design</li>
+        <li>Responsive Layout</li>
+        <li>Contact Form</li>
+        <li>Mobile Friendly</li>
+        <li>Basic SEO Setup</li>
+        <li>Professional Design</li>
+      </ul>
+      <a href="#contact" class="btn btn--primary package-card__btn">Get a Quote</a>
+    </div>
+
+    <div class="package-card">
+      <div class="package-card__head">
+        <h3 class="package-card__title">App Design Package</h3>
+        <p class="package-card__price"><span>Starting at</span>$1,000</p>
+      </div>
+      <ul class="package-card__list">
+        <li>UI/UX Design</li>
+        <li>Mobile App Design</li>
+        <li>Interactive Prototype</li>
+        <li>User Flow Design</li>
+        <li>Modern Interface</li>
+        <li>Development Consultation</li>
+      </ul>
+      <a href="#contact" class="btn btn--outline package-card__btn">Get a Quote</a>
+    </div>
+
+    <div class="package-card">
+      <div class="package-card__head">
+        <h3 class="package-card__title">3D Menu + Google Reviews Package</h3>
+        <p class="package-card__price"><span>Starting at</span>$350</p>
+      </div>
+      <ul class="package-card__list">
+        <li>Interactive Digital Menu</li>
+        <li>3D Food Visualization</li>
+        <li>AR Menu Experience</li>
+        <li>Google Review Assistance</li>
+        <li>QR Code Setup</li>
+        <li>NFC Review Card Setup</li>
+      </ul>
+      <a href="#contact" class="btn btn--outline package-card__btn">Get a Quote</a>
+    </div>
+
+  </div>
+
+  <p class="packages__note">Every package starts here — final pricing depends on the scope of your project. We'll walk through the details together before anything is final.</p>
+</section>
+
+<!-- =========================================================
+     WHY CHOOSE NOVA LLC
+========================================================= -->
+<section class="why" id="about">
+  <div class="section__head section__head--light">
+    <h2 class="section__title">Why Choose Nova LLC?</h2>
+  </div>
+
+  <div class="why__grid">
+    <div class="why__item">
+      <div class="why__icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5C15.5 3.5 18 6.2 18 9.5C18 11.7 16.9 13.1 15.9 14.1C15.2 14.8 14.7 15.4 14.6 16.2H9.4C9.3 15.4 8.8 14.8 8.1 14.1C7.1 13.1 6 11.7 6 9.5C6 6.2 8.5 3.5 12 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 18.5H14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M10.3 20.5H13.7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <h3 class="why__title">Innovation</h3>
+      <p class="why__desc">We use modern technology and creative solutions to help businesses stand out.</p>
+    </div>
+
+    <div class="why__item">
+      <div class="why__icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12 20C10 20 8.2 19.3 6.8 18.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="1 3.2"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+      </div>
+      <h3 class="why__title">Custom Solutions</h3>
+      <p class="why__desc">Every business is different. We create solutions based on your specific goals.</p>
+    </div>
+
+    <div class="why__item">
+      <div class="why__icon">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4.5" width="16" height="15" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M4 9H20" stroke="currentColor" stroke-width="1.5"/><path d="M7.5 13H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <h3 class="why__title">Modern Design</h3>
+      <p class="why__desc">Clean, professional, and user-friendly experiences designed for today's customers.</p>
+    </div>
+
+    <div class="why__item">
+      <div class="why__icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5L4.5 7.4V12.3C4.5 16.5 7.6 19.8 12 20.5C16.4 19.8 19.5 16.5 19.5 12.3V7.4L12 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.3 12.2L11.2 14.1L14.9 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3 class="why__title">Texas Focus</h3>
+      <p class="why__desc">Proudly helping businesses grow with modern digital solutions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CONTACT / GET A QUOTE FORM
+     Structured for easy connection to Formspree, EmailJS,
+     or Netlify Forms later — see script.js comments.
+========================================================= -->
+<section class="contact" id="contact">
+  <div class="contact__intro">
+    <h2 class="section__title">Get a Quote</h2>
+    <p class="section__subtitle">Tell us about your project and we'll get in touch with you.</p>
+  </div>
+
+  <form class="contact__form" id="quoteForm" novalidate>
+    <div class="form__row">
+      <div class="form__field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <span class="form__error">Please enter your name.</span>
+      </div>
+      <div class="form__field">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="What do you need help with?" required>
+        <span class="form__error">Please tell us the subject.</span>
+      </div>
+    </div>
+
+    <div class="form__row">
+      <div class="form__field">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" required>
+        <span class="form__error">Please enter a valid phone number.</span>
+      </div>
+      <div class="form__field">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@email.com" required>
+        <span class="form__error">Please enter a valid email address.</span>
+      </div>
+    </div>
+
+    <div class="form__field">
+      <label for="message">Message <span class="form__optional">(optional)</span></label>
+      <textarea id="message" name="message" rows="4" placeholder="Tell us a little about your project..."></textarea>
+    </div>
+
+    <button type="submit" class="btn btn--lg btn--primary form__submit">Send Request</button>
+
+    <p class="form__success" id="formSuccess" role="status" aria-live="polite">
+      Thank you! Your request has been received. We'll contact you soon.
+    </p>
+  </form>
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="footer__name">NOVA LLC</p>
+      <p class="footer__tagline">Texas Meets Innovation</p>
+    </div>
+
+    <nav class="footer__links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <p class="footer__copy">© 2026 Nova LLC. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
